@@ -1,11 +1,13 @@
-def square_array(array)
+def square_array(numbers)
+  result = Array.new(numbers.size)
+  
+  i = 0
 
-counter = 0 
-array = [1,2,3]
+  while i < numbers.size
+    result[i] = numbers[i] **2 
+    i += 1 
+  end
 
-while array[counter] do
-  puts array.sqrt
-  counter += 1  
-end
+  result
 
 end 
